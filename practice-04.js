@@ -16,7 +16,7 @@ button.addEventListener("click", function () {
     let tips = parseInt(document.getElementById("tipsInput").value);
     let people = parseInt(document.getElementById("countPeople").value);
 
-    if (isNaN(price) || isNaN(tips) || isNaN(people) || price <= 0 || tips < 0 || people <= 0) {
+    if (isNaN(price) || isNaN(tips) || isNaN(people) || price <= 0 || tips < 1 || people < 1) {
         alert("Введите корректные данные");
         return;
     }
